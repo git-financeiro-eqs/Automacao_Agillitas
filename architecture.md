@@ -76,7 +76,7 @@ Abaixo estão os módulos que compõem o sistema, com suas responsabilidades e i
       <td>Realiza o lançamento sequencial de RTs.</td>
       <td>
         <ul>
-          <li>Processa RTs parciais de forma contínua.</li>
+          <li>Processa RTs pendentes de forma contínua.</li>
           <li>Utiliza funções do módulo <strong>acaoComum</strong> para ações compartilhadas.</li>
         </ul>
       </td>
@@ -87,7 +87,7 @@ Abaixo estão os módulos que compõem o sistema, com suas responsabilidades e i
       <td>Realiza o lançamento de uma única RT.</td>
       <td>
         <ul>
-          <li>Processa uma RT específica, definida pelo usuário.</li>
+          <li>Processa uma RT específica, definida pelo usuário, podendo ser parcial ou não.</li>
           <li>Utiliza funções do módulo <strong>acaoComum</strong> para ações compartilhadas.</li>
         </ul>
       </td>
