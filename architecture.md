@@ -128,7 +128,7 @@ Abaixo estão os módulos que compõem o sistema, com suas responsabilidades e i
       <td>Fornece funções utilitárias para todos os módulos do sistema.</td>
       <td>
         <ul>
-          <li>Funções genéricas, como formatação de dados, cálculos e manipulação de strings.</li>
+          <li>Funções genéricas, formatação de dados, log em E-mail e manipulação de strings, além de movimentações repetitivas.</li>
         </ul>
       </td>
       <td>Utilizado por todos os módulos que precisam de funcionalidades comuns.</td>
