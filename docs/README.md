@@ -6,7 +6,6 @@
 
 https://github.com/user-attachments/assets/61cbee0c-9ee4-4faa-bfd9-d7d2e25f33a6
 
-
 <br/>
 
 - Essa primeira parte demonstra a tela inicial da rotina IntAgilitas, é nessa tela que fazemos os filtros de RTs. As RTs que podem ser lançadas pela
