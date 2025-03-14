@@ -71,7 +71,6 @@ Antes de rodar o projeto, certifique-se de ter instalado:
    ```
 5. As demais ações o próprio Bot irá te ensinar.
 <br/>
-<br/>
 
 ## **Observações**  
 
