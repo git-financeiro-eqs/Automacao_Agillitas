@@ -19,80 +19,53 @@ A automação é composta por **10 módulos**, cada um com responsabilidades esp
 
 Abaixo estão os módulos que compõem o sistema, com suas responsabilidades e interações:
 
-### 1. **acaoComum**
-- **Responsabilidade**: Fornece funções compartilhadas pelos módulos **mariquinhaCorrente** e **mariquinhaUnitária**.
-- **Funcionalidades**:
-  - Ações comuns, como posicionar o cursor em pontos específicos da interface.
-  - Funções para filtrar RTs, solicitar XMLs, copiar chaves de acesso e tratar erros.
-- **Interações**:
-  - Utilizado por **mariquinhaCorrente** e **mariquinhaUnitária** para evitar duplicação de código.
+<table>
+  <thead>
+    <tr>
+      <th>Módulo</th>
+      <th>Responsabilidade</th>
+      <th>Funcionalidades</th>
+      <th>Interações</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>acaoComum</strong></td>
+      <td>Fornece funções compartilhadas pelos módulos <strong>mariquinhaCorrente</strong> e <strong>mariquinhaUnitária</strong>.</td>
+      <td>
+        <ul>
+          <li>Ações comuns, como posicionar o cursor em pontos específicos da interface.</li>
+          <li>Funções para filtrar RTs, solicitar XMLs, copiar chaves de acesso e tratar erros.</li>
+        </ul>
+      </td>
+      <td>Utilizado por <strong>mariquinhaCorrente</strong> e <strong>mariquinhaUnitária</strong> para evitar duplicação de código.</td>
+    </tr>
+    <tr>
+      <td><strong>extratorXML</strong></td>
+      <td>Extrai e processa os dados dos XMLs das notas fiscais.</td>
+      <td>
+        <ul>
+          <li>Leitura de XMLs para validação de valores e aplicação de TES (154 ou 155).</li>
+          <li>Coleta de informações como valores totais, impostos e detalhes dos itens.</li>
+        </ul>
+      </td>
+      <td>Utilizado pelos módulos de lançamento (<strong>mariquinhaCorrente</strong> e <strong>mariquinhaUnitária</strong>) para processar Danfes.</td>
+    </tr>
+    <tr>
+      <td><strong>gui</strong></td>
+      <td>Interface gráfica da automação.</td>
+      <td>
+        <ul>
+          <li>Permite ao usuário interagir com a automação, selecionar modos de operação e configurar parâmetros.</li>
+        </ul>
+      </td>
+      <td>Comunica-se com o módulo <strong>main</strong> para iniciar a execução.</td>
+    </tr>
+    <tr>
+      <td><strong>main</strong></td>
+      <td>Executa o programa e abre a interface gráfica.</td
 
-### 2. **extratorXML**
-- **Responsabilidade**: Extrai e processa os dados dos XMLs das notas fiscais.
-- **Funcionalidades**:
-  - Leitura de XMLs para validação de valores e aplicação de TES (154 ou 155).
-  - Coleta de informações como valores totais, impostos e detalhes dos itens.
-- **Interações**:
-  - Utilizado pelos módulos de lançamento (**mariquinhaCorrente** e **mariquinhaUnitária**) para processar Danfes.
-
-### 3. **gui**
-- **Responsabilidade**: Interface gráfica da automação.
-- **Funcionalidades**:
-  - Permite ao usuário interagir com a automação, selecionar modos de operação e configurar parâmetros.
-- **Interações**:
-  - Comunica-se com o módulo **main** para iniciar a execução.
-
-### 4. **main**
-- **Responsabilidade**: Executa o programa e abre a interface gráfica.
-- **Funcionalidades**:
-  - Inicializa a automação e carrega a interface gráfica.
-- **Interações**:
-  - Depende do módulo **gui** para exibir a interface ao usuário.
-
-### 5. **mariquinhaCorrente**
-- **Responsabilidade**: Realiza o lançamento sequencial de RTs.
-- **Funcionalidades**:
-  - Processa RTs parciais de forma contínua.
-  - Utiliza funções do módulo **acaoComum** para ações compartilhadas.
-- **Interações**:
-  - Comunica-se com **extratorXML** para processar Danfes e com **operadoresLancamento** para validações.
-
-### 6. **mariquinhaUnitária**
-- **Responsabilidade**: Realiza o lançamento de uma única RT.
-- **Funcionalidades**:
-  - Processa uma RT específica, definida pelo usuário.
-  - Utiliza funções do módulo **acaoComum** para ações compartilhadas.
-- **Interações**:
-  - Comunica-se com **extratorXML** para processar Danfes e com **operadoresLancamento** para validações.
-
-### 7. **mensagens**
-- **Responsabilidade**: Contém mensagens de apresentação e instruções para o usuário.
-- **Funcionalidades**:
-  - Exibe mensagens informativas e de erro durante a execução.
-- **Interações**:
-  - Utilizado por todos os módulos que precisam exibir informações ao usuário.
-
-### 8. **operadoresLancamento**
-- **Responsabilidade**: Fornece funções utilitárias para conferência e validação dos valores da NF.
-- **Funcionalidades**:
-  - Compara valores da NF com os valores apresentados na tela de lançamento do SIGA.
-- **Interações**:
-  - Utilizado pelos módulos **mariquinhaCorrente** e **mariquinhaUnitária** durante o lançamento.
-
-### 9. **tratamentoItem**
-- **Responsabilidade**: Trata itens que foram fracionados durante o lançamento.
-- **Funcionalidades**:
-  - Aplica razão e proporção aos valores de itens fracionados.
-- **Interações**:
-  - Utilizado pelos módulos de lançamento para garantir a precisão dos valores.
-
-### 10. **utils**
-- **Responsabilidade**: Fornece funções utilitárias para todos os módulos do sistema.
-- **Funcionalidades**:
-  - Funções genéricas, como formatação de dados, cálculos e manipulação de strings.
-- **Interações**:
-  - Utilizado por todos os módulos que precisam de funcionalidades comuns.
-
+                                                          
 ---
 
 ## Diagrama de Arquitetura
