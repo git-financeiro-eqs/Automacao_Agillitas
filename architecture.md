@@ -98,7 +98,7 @@ Abaixo estão os módulos que compõem o sistema, com suas responsabilidades e i
       <td>Contém mensagens de apresentação e instruções para o usuário.</td>
       <td>
         <ul>
-          <li>Exibe mensagens informativas e de erro durante a execução.</li>
+          <li>Manual de uso.</li>
         </ul>
       </td>
       <td>Utilizado por todos os módulos que precisam exibir informações ao usuário.</td>
