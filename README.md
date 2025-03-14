@@ -57,56 +57,38 @@ Este projeto foi desenvolvido utilizando:
 
 ---
 
-## 📦 Instalação
+## ⚙️ **Pré-requisitos**  
+Antes de rodar o projeto, certifique-se de ter instalado:  
+- **Python 3.x**    
+- **ERP TOTVS Microsiga** instalado e acessível 
+<br/>
 
-Para rodar a automação, instale as dependências do projeto utilizando:
+## 📥 **Instalação**  
 
-```sh
-pip install -r requirements.txt
-```
-
----
-
-## 📝 Arquivo `requirements.txt`
-
-O projeto utiliza as seguintes bibliotecas:
-
-```
-MouseInfo==0.1.3
-numpy==2.2.3
-opencv-python==4.11.0.86
-pillow==11.1.0
-PyAutoGUI==0.9.54
-PyGetWindow==0.0.9
-PyMsgBox==1.0.9
-pyperclip==1.9.0
-PyRect==0.2.0
-PyScreeze==1.0.1
-pytweening==1.2.0
-xmltodict==0.14.2
-```
+1. **Clone este repositório**  
+   ```sh
+   git clone https://github.com/git-financeiro-eqs/Automacao_Documento_de_Entrada.git
+   ```
+   
+2. **Crie um ambiente virtual (opcional, mas recomendado)**  
+   ```sh
+   python -m venv venv
+   venv\Scripts\activate  # Windows
+   ```
+   
+3. **Instale as dependências**  
+   ```sh
+   pip install -r requirements.txt
+   ```
+<br/>  
 
 ---
+
 
 ## 📌 Como Usar
 
 1. Inicie a automação e selecione o modo desejado.
 2. A Mariquinha iniciará o processamento dos registros pendentes.
-3. Caso seja necessário, insira informações solicitadas pelo sistema.
-4. Acompanhe o lançamento das RTs e NF pelo log do processo.
 
----
-
-## 🛠 Manutenção e Melhorias
-
-Caso precise modificar o código ou adicionar novas funcionalidades, basta editar os módulos principais e atualizar as regras de negócio conforme necessário.
-
----
-
-## 📞 Contato
-
-Para dúvidas ou sugestões, entre em contato com o desenvolvedor.
-
----
 
 🚀 **Automação para tornar os lançamentos mais eficientes e sem erros!**
