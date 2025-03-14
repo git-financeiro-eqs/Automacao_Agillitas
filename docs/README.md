@@ -1,5 +1,6 @@
 # Bot em execução
-
+<br/>
+<br/>
 
 
 https://github.com/user-attachments/assets/61cbee0c-9ee4-4faa-bfd9-d7d2e25f33a6
