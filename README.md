@@ -54,10 +54,4 @@ Antes de rodar o projeto, certifique-se de ter instalado:
 ---
 
 
-## 📌 Como Usar
-
-1. Inicie a automação e clique no modo desejado.
-2. A Mariquinha iniciará o processamento dos registros pendentes.
-
-
 🚀 **Automação para tornar os lançamentos mais eficientes e sem erros!**
