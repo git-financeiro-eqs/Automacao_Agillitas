@@ -14,37 +14,6 @@ Automação desenvolvida para realizar o lançamento de RTs (Caixas - Demonstrat
 
 ---
 
-## 🚀 Demonstração da Automação em Execução
-
-### 📌 Tela Inicial da Rotina IntAgilitas
-
-A tela inicial onde são feitos os filtros de RTs. A automação pode operar em dois modos:
-- **MariquinhaCorrente**: Lança apenas as RTs parciais.
-- **MariquinhaUnitária**: Lança RTs pendentes e parciais, conforme definido pelo operador.
-
-![Tela Inicial](https://github.com/user-attachments/assets/61cbee0c-9ee4-4faa-bfd9-d7d2e25f33a6)
-
-### 📌 Lançamento de uma Nota Fiscal (NF)
-
-Após solicitar o XML, a automação verifica o status e inicia o lançamento. Durante esse processo:
-- Monitora erros e possíveis telas emergentes.
-- Insere dados ausentes no cadastro do fornecedor, se necessário.
-- Valida o valor total e seleciona a TES apropriada.
-- Salva o lançamento e aguarda a próxima etapa.
-
-![Lançamento de NF](https://github.com/user-attachments/assets/17f2fb79-335c-4644-bf2e-05cfa20c291b)
-
-### 📌 Lançamento de um Recibo
-
-No caso de registros do tipo Recibo:
-- A automação identifica o tipo do registro e clica no botão "Lançar Nota".
-- Aguarda a tela de confirmação para finalizar o lançamento.
-- Se estiver no modo **MariquinhaCorrente**, reinicia o processo e busca novos registros.
-
-![Lançamento de Recibo](https://github.com/user-attachments/assets/bb157bce-15f5-4953-884c-38e555d8a2c4)
-
----
-
 ## 🛠 Tecnologias Utilizadas
 
 Este projeto foi desenvolvido utilizando:
@@ -87,7 +56,7 @@ Antes de rodar o projeto, certifique-se de ter instalado:
 
 ## 📌 Como Usar
 
-1. Inicie a automação e selecione o modo desejado.
+1. Inicie a automação e clique no modo desejado.
 2. A Mariquinha iniciará o processamento dos registros pendentes.
 
 
