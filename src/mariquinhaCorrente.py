@@ -448,7 +448,6 @@ def robozinho():
                 
                 except ValueError:
                     acaoComum.pular_processo()
-                    print("Já vi esse, paizão")
                     controle_de_repeticao.append(chave_de_acesso)
                     return operar_lancamento(pular_processo)
                 
