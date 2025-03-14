@@ -101,7 +101,7 @@ Abaixo estão os módulos que compõem o sistema, com suas responsabilidades e i
           <li>Manual de uso.</li>
         </ul>
       </td>
-      <td></td>
+      <td>Apresentado assim que o executável da automação é clicado</td>
     </tr>
     <tr>
       <td><strong>operadoresLancamento</strong></td>
