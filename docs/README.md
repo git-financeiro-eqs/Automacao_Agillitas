@@ -5,6 +5,7 @@
 
 https://github.com/user-attachments/assets/61cbee0c-9ee4-4faa-bfd9-d7d2e25f33a6
 
+
 <br/>
 <br/>
 
@@ -16,6 +17,7 @@ duas possibilidades. No caso deste vídeo demonstrativo, a Mariquinha está send
 
 https://github.com/user-attachments/assets/17f2fb79-335c-4644-bf2e-05cfa20c291b
 
+
 <br/>
 <br/>
 
@@ -26,6 +28,7 @@ Feito essa etapa nos itens. Ela tecla 'CTRL + S' e salva o lançamento. Aguarda 
 
 
 https://github.com/user-attachments/assets/bb157bce-15f5-4953-884c-38e555d8a2c4
+
 
 <br/>
 <br/>
