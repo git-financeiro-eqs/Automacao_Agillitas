@@ -8,8 +8,8 @@ Este documento descreve a arquitetura do projeto **Automação Agillitas**, expl
 
 O projeto **Automação Agillitas** foi desenvolvido para automatizar o lançamento de RTs (Recibos e Danfes) no sistema ERP Microsiga. A automação é dividida em dois modos principais de operação:
 
-1. **mariquinhaCorrente**: Realiza o lançamento sequencial de RTs pendentes ou parciais.
-2. **mariquinhaUnitária**: Realiza o lançamento de uma RT específica, definida pelo operador.
+1. **mariquinhaCorrente**: Realiza o lançamento sequencial de RTs pendentes.
+2. **mariquinhaUnitária**: Realiza o lançamento de uma RT específica, definida pelo operador, podendo até lançar RTs baixadas parcialmente.
 
 A automação é composta por **10 módulos**, cada um com responsabilidades específicas, que trabalham em conjunto para garantir o funcionamento correto do sistema.
 
