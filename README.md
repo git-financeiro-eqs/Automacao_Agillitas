@@ -53,5 +53,32 @@ Antes de rodar o projeto, certifique-se de ter instalado:
 
 ---
 
+## 🚀 **Como Executar**  
+
+1. Certifique-se de que o **ERP Microsiga está acessível e já logado**. O Microsiga precisa estar aberto na tela principal da rotina **IntAgillitas**.  
+2. Coloque os **arquivos XML** das notas na pasta configurada como **repositório**.
+   
+   2.1. Configure o repositório de XMLs:  
+        - Crie uma pasta para armazenar os XMLs das notas fiscais.  
+        - Atualize o caminho da pasta no código, se necessário.  
+        - É preciso sempre inserir os XMLs na pasta repositório, essa é a unica forma de alimentar a automação.
+          Essa tarefa pode ser feita uma vez por mês, pegando os XMLs do mês anterior e os salvando na pasta chamada xmlFiscalio.
+          Eu utilizo o software Fiscal.io para realizar a busca e o Download dos arquivos XMLs desejados.
+   
+4. **Execute o script principal**:  
+   ```sh
+   python main.py
+   ```
+5. As demais ações o próprio Bot irá te ensinar.
+<br/>
+<br/>
+
+## **Observações**  
+
+1. A automação envia a RT que por algum motivo não foi completamente lançada por E-mail para o grupo Gestão de Caixas.
+
+2. *Para um melhor entendimento do funcionamento do Bot, deixei um vídeo na pasta *docs* dele em ação.
+
+---
 
 🚀 **Automação para tornar os lançamentos mais eficientes e sem erros!**
