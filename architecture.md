@@ -166,24 +166,6 @@ Aqui está um diagrama que mostra como os módulos se relacionam:
 
 ---
 
-## Detalhes Técnicos
-
-### **mariquinhaCorrente**
-- Realiza o lançamento sequencial de RTs pendentes ou parciais.
-- Utiliza funções do módulo **acaoComum** para ações comuns, como filtrar RTs e tratar erros.
-- Envia e-mails para notificar problemas durante o lançamento.
-
-### **mariquinhaUnitária**
-- Realiza o lançamento de uma RT específica, definida pelo operador.
-- Utiliza funções do módulo **acaoComum** para ações comuns, como solicitar XMLs e copiar chaves de acesso.
-- Envia e-mails para notificar problemas durante o lançamento.
-
-### **utils**
-- Fornece funções utilitárias, como formatação de dados, manipulação de strings e envio de e-mails.
-- Utilizado por todos os módulos para tarefas genéricas.
-
----
-
 ## Conclusão
 
 A arquitetura do projeto **Automação Agillitas** foi projetada para ser modular e flexível, permitindo a reutilização de código e a fácil manutenção. Cada módulo tem uma responsabilidade clara, e a interação entre eles é bem definida, garantindo um fluxo de trabalho eficiente e confiável.
