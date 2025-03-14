@@ -63,7 +63,78 @@ Abaixo estão os módulos que compõem o sistema, com suas responsabilidades e i
     </tr>
     <tr>
       <td><strong>main</strong></td>
-      <td>Executa o programa e abre a interface gráfica.</td
+      <td>Executa o programa e abre a interface gráfica.</td>
+      <td>
+        <ul>
+          <li>Inicializa a automação e carrega a interface gráfica.</li>
+        </ul>
+      </td>
+      <td>Depende do módulo <strong>gui</strong> para exibir a interface ao usuário.</td>
+    </tr>
+    <tr>
+      <td><strong>mariquinhaCorrente</strong></td>
+      <td>Realiza o lançamento sequencial de RTs.</td>
+      <td>
+        <ul>
+          <li>Processa RTs parciais de forma contínua.</li>
+          <li>Utiliza funções do módulo <strong>acaoComum</strong> para ações compartilhadas.</li>
+        </ul>
+      </td>
+      <td>Comunica-se com <strong>extratorXML</strong> para processar Danfes e com <strong>operadoresLancamento</strong> para validações.</td>
+    </tr>
+    <tr>
+      <td><strong>mariquinhaUnitária</strong></td>
+      <td>Realiza o lançamento de uma única RT.</td>
+      <td>
+        <ul>
+          <li>Processa uma RT específica, definida pelo usuário.</li>
+          <li>Utiliza funções do módulo <strong>acaoComum</strong> para ações compartilhadas.</li>
+        </ul>
+      </td>
+      <td>Comunica-se com <strong>extratorXML</strong> para processar Danfes e com <strong>operadoresLancamento</strong> para validações.</td>
+    </tr>
+    <tr>
+      <td><strong>mensagens</strong></td>
+      <td>Contém mensagens de apresentação e instruções para o usuário.</td>
+      <td>
+        <ul>
+          <li>Exibe mensagens informativas e de erro durante a execução.</li>
+        </ul>
+      </td>
+      <td>Utilizado por todos os módulos que precisam exibir informações ao usuário.</td>
+    </tr>
+    <tr>
+      <td><strong>operadoresLancamento</strong></td>
+      <td>Fornece funções utilitárias para conferência e validação dos valores da NF.</td>
+      <td>
+        <ul>
+          <li>Compara valores da NF com os valores apresentados na tela de lançamento do SIGA.</li>
+        </ul>
+      </td>
+      <td>Utilizado pelos módulos <strong>mariquinhaCorrente</strong> e <strong>mariquinhaUnitária</strong> durante o lançamento.</td>
+    </tr>
+    <tr>
+      <td><strong>tratamentoItem</strong></td>
+      <td>Trata itens que foram fracionados durante o lançamento.</td>
+      <td>
+        <ul>
+          <li>Aplica razão e proporção aos valores de itens fracionados.</li>
+        </ul>
+      </td>
+      <td>Utilizado pelos módulos de lançamento para garantir a precisão dos valores.</td>
+    </tr>
+    <tr>
+      <td><strong>utils</strong></td>
+      <td>Fornece funções utilitárias para todos os módulos do sistema.</td>
+      <td>
+        <ul>
+          <li>Funções genéricas, como formatação de dados, cálculos e manipulação de strings.</li>
+        </ul>
+      </td>
+      <td>Utilizado por todos os módulos que precisam de funcionalidades comuns.</td>
+    </tr>
+  </tbody>
+</table>
 
                                                           
 ---
