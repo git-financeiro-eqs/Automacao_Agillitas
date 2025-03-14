@@ -101,7 +101,7 @@ Abaixo estão os módulos que compõem o sistema, com suas responsabilidades e i
           <li>Manual de uso.</li>
         </ul>
       </td>
-      <td>Utilizado por todos os módulos que precisam exibir informações ao usuário.</td>
+      <td></td>
     </tr>
     <tr>
       <td><strong>operadoresLancamento</strong></td>
