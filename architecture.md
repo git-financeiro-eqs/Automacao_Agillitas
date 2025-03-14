@@ -80,7 +80,7 @@ Abaixo estão os módulos que compõem o sistema, com suas responsabilidades e i
           <li>Utiliza funções do módulo <strong>acaoComum</strong> para ações compartilhadas.</li>
         </ul>
       </td>
-      <td>Comunica-se com <strong>extratorXML</strong> para processar Danfes e com <strong>operadoresLancamento</strong> para validações.</td>
+      <td>Comunica-se com <strong>utils</strong> para se movimentar pela interface do SIGA e com <strong>operadoresLancamento</strong> para validações.</td>
     </tr>
     <tr>
       <td><strong>mariquinhaUnitária</strong></td>
@@ -91,7 +91,7 @@ Abaixo estão os módulos que compõem o sistema, com suas responsabilidades e i
           <li>Utiliza funções do módulo <strong>acaoComum</strong> para ações compartilhadas.</li>
         </ul>
       </td>
-      <td>Comunica-se com <strong>extratorXML</strong> para processar Danfes e com <strong>operadoresLancamento</strong> para validações.</td>
+      <td>Comunica-se com <strong>utils</strong> para se movimentar pela interface do SIGA, e com <strong>operadoresLancamento</strong> para validações.</td>
     </tr>
     <tr>
       <td><strong>mensagens</strong></td>
