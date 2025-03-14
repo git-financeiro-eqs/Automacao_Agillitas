@@ -93,7 +93,7 @@ Mariquinha,
 
     try:
         with smtplib.SMTP_SSL('grid331.mailgrid.com.br', 465) as servidor:
-            servidor.login("eqsengenharia@eqsengenharia.com.br", "YXPLlbnL2N")
+            servidor.login("eqsengenharia@eqsengenharia.com.br", "**********")
             servidor.send_message(carta)
     except Exception as e:
         pass
