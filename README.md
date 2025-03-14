@@ -74,7 +74,7 @@ Antes de rodar o projeto, certifique-se de ter instalado:
 
 ## **Observações**  
 
-1. A automação envia a RT que por algum motivo não foi completamente lançada por E-mail para o grupo Gestão de Caixas.
+1. A automação envia a RT que, por algum motivo não foi completamente lançada, por E-mail para o grupo Gestão de Caixas.
 
 2. *Para um melhor entendimento do funcionamento do Bot, deixei um vídeo na pasta *docs* dele em ação.
 
